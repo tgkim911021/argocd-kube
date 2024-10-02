@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: argocd-kube-svc # kubectl get svc
+  name: argocd-kube-svc
 spec:
   ports:
-  - port: 80 # docker run -d -p 80:80
+  - port: 80
   selector:
     run: argocd-kube
-  type: LoadBalancerr
+  type: LoadBalancer
